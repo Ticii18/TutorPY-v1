@@ -10,6 +10,7 @@ function AppRouter() {
       <Route path="/" element={<Home />} />
       <Route path="/tasks" element={<Tasks />} />
       <Route path="/document" element={<Documentation />} />
+      {/* <Route path="/faqs" element={<Faqs />} /> */}
       
     </Routes>
   );

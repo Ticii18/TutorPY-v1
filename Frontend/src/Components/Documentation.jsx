@@ -1,13 +1,11 @@
 function Documentation() {
-    return(
+    return (
         <>
-        <div className="h-screen bg-white dark:bg-gray-900 ">
-            <h1 className="dark:text-white">
-                Hola estoy en documetacion
-            </h1>
-        </div>
+        <h1 className="h-screen w-full bg-white dark:bg-gray-900">
+            Hola Documentación
+        </h1>
         </>
-    )
+    );
 }
 
-export default Documentation
+export default Documentation;

@@ -20,14 +20,14 @@ function Home() {
                   className="inline-block rounded border border-gray-300 px-5 py-3 font-medium text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white"
                   href="https://www.python.org/doc/"
                 >
-                  Official documentation
+                  Documentación Oficial
                 </a>
               </div>
             </div>
             <div className="flex justify-center">
               <img
-                className="w-full max-w-md h-auto"
-                src="../../public/undraw_coding_joxb.svg"
+                className="w-full max-w-md h-auto dark:fill-red-600"
+                src="/undraw_coding_joxb.svg"
                 alt="Ilustración de programación en Python"
               />
             </div>
@@ -52,14 +52,14 @@ function Home() {
                 className="inline-block rounded border border-gray-300 px-5 py-3 font-medium text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white"
                 
                 >
-                  Learn More
+                  Leer más
                 </Link>
               </div>
             </div>
             <div className="flex justify-center">
               <img
                 className="w-full max-w-md h-auto"
-                src="../../public/undraw_visual-data_3ghp.svg"
+                src="/undraw_visual-data_3ghp.svg"
                 alt="Ilustración de ciencia de datos"
               />
             </div>
@@ -83,20 +83,20 @@ function Home() {
                   className="inline-block rounded bg-indigo-600 px-5 py-3 font-medium text-white hover:bg-indigo-700"
                   href="#"
                 >
-                  Get Started
+                  Empezar
                 </a>
                 <a
                   className="inline-block rounded border border-gray-300 px-5 py-3 font-medium text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white"
                   href="#"
                 >
-                  Learn More
+                  Leer más sobre nosotros
                 </a>
               </div>
             </div>
             <div className="flex justify-center">
               <img
                 className="w-full max-w-md h-auto"
-                src="../../public/undraw_meet-the-team_pp46.svg"
+                src="/undraw_meet-the-team_pp46.svg"
                 alt="Ilustración de equipo"
               />
             </div>
