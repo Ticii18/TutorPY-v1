@@ -1,5 +1,7 @@
 import Logo from "../../public/Logo.svg"
 import ChangeButton from "./ChangeButton";
+import { Link } from 'react-router-dom';
+import Tasks from "./Tasks";
 
 const Navbar = () => {
     return (
@@ -13,18 +15,18 @@ const Navbar = () => {
                         </a>
 
                         <div className="ml-10 flex items-baseline space-x-4">
-                            <a
-                                href="#"
+                            <Link
+                                to="/"
                                 className="text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
                             >
-                                About
-                            </a>
-                            <a
-                                href="#"
+                                Inicio
+                            </Link>
+                            <Link
+                                to="/tasks"
                                 className="text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
                             >
-                                Careers
-                            </a>
+                                Tareas
+                            </Link>
                             <a
                                 href="#"
                                 className="text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"

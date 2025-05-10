@@ -1,53 +1,110 @@
+import SlowMotion from "./SlowMotion";
+import { Link } from "react-router-dom";
+
 function Home() {
-    return (
-        <>
-        <div className="h-screen dark:border-gray-800 dark:bg-gray-900 dark:shadow-gray-700/25 pt-4">
-        <article className="max-w-sm rounded-lg border border-gray-100 bg-white p-4 shadow-xs transition hover:shadow-lg sm:p-6 dark:border-gray-800 dark:bg-gray-900 dark:shadow-gray-700/25">
-            <span className="inline-block rounded-sm bg-blue-600 p-2 text-white dark:bg-blue-700">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+  return (
+    <>
+      <SlowMotion>
+        <section className="lg:h-screen bg-white dark:bg-gray-900 flex items-center">
+          <div className="w-full max-w-screen-xl mx-auto px-4 py-16 sm:px-6 flex flex-col md:flex-row items-center gap-12 lg:px-8 lg:py-32">
+            <div className="max-w-prose">
+              <h1 className="text-yellow-300 text-4xl font-bold sm:text-5xl">
+                Python:
+                <strong className="text-blue-600"> Ciencia de datos </strong>
+              </h1>
+              <p className="mt-4 text-base sm:text-lg/relaxed text-gray-700 dark:text-gray-200">
+                Python es bla bla bla.
+              </p>
+              <div className="mt-6 flex gap-4">
+                <a
+                  className="inline-block rounded border border-gray-300 px-5 py-3 font-medium text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white"
+                  href="https://www.python.org/doc/"
                 >
-                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                    <path
-                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                    />
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                    />
-                </svg>
-            </span>
+                  Official documentation
+                </a>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <img
+                className="w-full max-w-md h-auto"
+                src="../../public/undraw_coding_joxb.svg"
+                alt="Ilustración de programación en Python"
+              />
+            </div>
+          </div>
+        </section>
+      </SlowMotion>
 
-            <a href="#">
-                <h3 className="mt-0.5 text-lg font-medium text-gray-900 dark:text-white">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </h3>
-            </a>
+      <SlowMotion>
+        <section className="lg:h-screen bg-white dark:bg-gray-900 flex items-center">
+          <div className="w-full max-w-screen-xl mx-auto px-4 py-16 sm:px-6 flex flex-col md:flex-row-reverse items-center gap-12 lg:px-8 lg:py-32">
+            <div className="max-w-prose">
+              <h1 className="text-yellow-300 text-4xl font-bold sm:text-5xl">
+                Python:
+                <strong className="text-blue-600"> Ciencia de datos </strong>
+              </h1>
+              <p className="mt-4 text-base sm:text-lg/relaxed text-gray-700 dark:text-gray-200">
+                La ciencia de datos es bla bla bla.
+              </p>
+              <div className="mt-6 flex gap-4">
+                <Link 
+                to="/document"
+                className="inline-block rounded border border-gray-300 px-5 py-3 font-medium text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white"
+                
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <img
+                className="w-full max-w-md h-auto"
+                src="../../public/undraw_visual-data_3ghp.svg"
+                alt="Ilustración de ciencia de datos"
+              />
+            </div>
+          </div>
+        </section>
+      </SlowMotion>
 
-            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur
-                animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia
-                itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
-                Molestias explicabo corporis voluptatem?
-            </p>
-
-            <a href="#" className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                Find out more
-
-                <span aria-hidden="true" className="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                    &rarr;
-                </span>
-            </a>
-        </article>
-        </div>
-        </>
-    );
+      <SlowMotion>
+        <section className="lg:h-screen bg-white dark:bg-gray-900 flex items-center">
+          <div className="w-full max-w-screen-xl mx-auto px-4 py-16 sm:px-6 flex flex-col md:flex-row items-center gap-12 lg:px-8 lg:py-32">
+            <div className="max-w-prose">
+              <h1 className="text-4xl font-bold text-gray-900 dark:text-white sm:text-5xl">
+                TutorPY:
+                <strong className="text-indigo-600"> Sobre nosotros </strong>
+              </h1>
+              <p className="mt-4 text-base sm:text-lg/relaxed text-gray-700 dark:text-gray-200">
+                Somos bla bla bla.
+              </p>
+              <div className="mt-6 flex gap-4">
+                <a
+                  className="inline-block rounded bg-indigo-600 px-5 py-3 font-medium text-white hover:bg-indigo-700"
+                  href="#"
+                >
+                  Get Started
+                </a>
+                <a
+                  className="inline-block rounded border border-gray-300 px-5 py-3 font-medium text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white"
+                  href="#"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <img
+                className="w-full max-w-md h-auto"
+                src="../../public/undraw_meet-the-team_pp46.svg"
+                alt="Ilustración de equipo"
+              />
+            </div>
+          </div>
+        </section>
+      </SlowMotion>
+    </>
+  );
 }
 
 export default Home;
